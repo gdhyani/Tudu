@@ -40,6 +40,6 @@ app.post("/", function(req, res){
 
 
 
-app.listen(process.env.PORT||3000, function (req, res){
-    console.log("Server Started");
+app.listen(process.env.PORT || 3000, function (req, res) {
+    console.log("Server Started on Port.")
 });
