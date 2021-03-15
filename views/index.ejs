@@ -1,0 +1,26 @@
+<%- include("partials/header") %> 
+        
+<div class="top_container">
+    <h1>Welcome to the Tudu List</h1>
+    <div class="searchbar">
+        <form method="POST">
+        <input class="bar" name="inputbar" placeholder="Add tsk" type="text" autocomplete="off" >
+        <button type="submit" class="btn btn-small btn-dark" >Add</button>
+    </form>
+</div>
+</div><br><br><br>
+
+
+<%  tasklist.forEach(function(task){ %>
+    <div class="box"><ul>
+        <input class="checkbox inline" type="checkbox" >
+        <p class="inline"><%= task %> </p>
+    </ul>
+</div>
+<% }); %>
+
+
+
+
+
+<%- include("partials/footer") %> 
