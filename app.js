@@ -16,11 +16,11 @@ var tasklist = [];
 
 // MongoDatabase
 
-// mongoose.connect("mongodb://localhost:27017/Tudu", { useUnifiedTopology: true, useNewUrlParser: true } );
-// const taskSchema = new mongoose.Schema({
-//     task: String,
-// });
-// const tasks = mongoose.model("task", taskSchema);
+mongoose.connect("mongodb://localhost:27017/Tudu", { useUnifiedTopology: true, useNewUrlParser: true } );
+const taskSchema = new mongoose.Schema({
+    task: String,
+});
+const tasks = mongoose.model("task", taskSchema);
 
 
 
